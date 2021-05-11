@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "insta",
+    "password": "insta1234",
+    "database": "instagood",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3306"
+  },
+  "test": {
+    "username": "insta",
+    "password": "insta1234",
+    "database": "instagood",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3306"
+  },
+  "production": {
+    "username": "insta",
+    "password": "insta1234",
+    "database": "instagood",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3306"
+  }
+}
