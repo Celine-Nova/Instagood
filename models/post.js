@@ -14,7 +14,11 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       // Je veux mettre un UserId à Post.
       Post.belongsTo(models.User);
+      // Un Post à plusieurs commentaires
       Post.hasMany(models.Comment);
+      // Relation ManyToMany entre post et hashtags
+      Post.belongsToMany(models.Hashtag, { through: models.PostHashtag})
+      Post.hasMany(models.PostHashtag);
     }
   };
   Post.init({

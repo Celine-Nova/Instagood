@@ -5,6 +5,7 @@ const cors = require('cors');
 const userRouter = require('./routes/user.router');
 const postRouter = require('./routes/post.router');
 const commentRouter = require('./routes/comment.router');
+const hashtagRouter = require('./routes/hashtag.router');
 
 const app = express();
 app.get('/', function (req, res) {
@@ -24,6 +25,7 @@ app.use(cors());
 app.use('/users', userRouter);
 app.use('/posts', postRouter);
 app.use('/comments', commentRouter);
+app.use('/hashtags', hashtagRouter);
 
 
 app.listen( port, () => {

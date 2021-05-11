@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
          //Un User à plusieurs Posts
          User.hasMany(models.Post);
           //Un User à plusieurs Commentaires
-         User.hasMany(models.Post)
+         User.hasMany(models.Comment)
     }
   };
   User.init({
